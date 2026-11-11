@@ -7,12 +7,16 @@ public class StateManager
     State currState;
     public void ChangeState(State newState)
     {
-        currState.Exit();
+        if (currState != null)
+        {
+            currState.Exit();
+        }
+            
         currState = newState;
         newState.Enter();
     }
     public void Update()
     {
-        currState.Execute();
+        if ( currState != null)currState.Execute();
     }
 }

@@ -4,6 +4,10 @@ using UnityEngine;
 
 public class FleeState : State
 {
+    Agent owner;
+
+    public FleeState(Agent owner) { this.owner = owner; }
+
     public override void Enter()
     {
         Debug.Log("Entered Flee State");

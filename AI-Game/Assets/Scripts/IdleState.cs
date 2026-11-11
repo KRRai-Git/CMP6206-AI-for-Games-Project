@@ -4,6 +4,11 @@ using UnityEngine;
 
 public class IdleState : State
 {
+
+    Agent owner;
+
+    public IdleState(Agent owner) { this.owner = owner; }
+
     public override void Enter()
     {
         Debug.Log("Entered Idle State");
