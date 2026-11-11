@@ -10,24 +10,26 @@ Finite State Machine
 
 N/A yet
 
-
-2. Description/overview - What AI features will the project have/showcase and in what way will they be realised.  For example, for FSM what type of agents will be created using FSM such as enemies, companion, allies, etc.  
-
 The project will begin with a finite state machine allowing for the npc to switch betweeen specific states depending on triggers/stimuli like when the player gets in a specific range of the npcs.
 
 
-3. Target game engine - Note: you should add an appropriate .gitignore file for the game engine you are using so you don't end up uploading extraneous files that increase the size of the repo.  There are .gitignore files for Unity and Unreal, and other game engines, available from https://github.com/github/gitignore.  For C++ using Visual Studio use the Visual Studio .gitignore but note that it needs some modification as .lib files necessary for building a C++ project are ignored by default.
-
 Unity
 
-
-4. Research - background to the project such as inspiration and what you need to find out to achieve the AI features.  If real behaviour is to be implemented then examples such as flocking or using Artificial Life (ALife) approaches such as cellular automata should be used to support your project and provide a means of comparison of how successful your implementation is.
-
-
-5. Methodology/planning - what approach are you going to take to develop the project implementation successfully.  For example, use of Trello or KANBAN.  Ideally, you have an overall plan for project development showing the major milestones to be achieved, e.g. setup up scene, implement AI methods, testing (for Quality Assurance), etc.
-
-
-6. Progress documentation - regular commits/updates to the project need to be documented with a brief overview and reflection on what has been achieved.  For example, what feature(s) have been added?  Were they achieved in the time allowed?  What problems were there or remain?  What has been learnt and what would you do differently if you had to repeat the project?
+4. Research 
+Basing my findings on a game like the one i want to make; Pacman i will research finite state machines to give the enemy ghosts different behaviours depending on the situation. For example:
+- Chase: The ghost follows the player's position.
+- Scatter: The ghost moves towards a specific corner of the maze.
+- Frightened: The ghost tries to run away when the player collects a power pellet.
+- Patrol: The ghost moves around a set area until it detects the player.
 
 
-7. References to sources used.  This must include graphics resources used such as models and textures, and code resources (websites, book, AI).
+I will be using the GITHUB boards to implement the use of KANBAN for project planning
+
+
+FSM added
+Sensors WIP
+
+
+References
+
+TheKiwiCoder (2021). Unity line of sight checking using sensors [AI #08]. [online] YouTube. Available at: https://www.youtube.com/watch?v=znZXmmyBF-o [Accessed 11 Nov. 2026].
