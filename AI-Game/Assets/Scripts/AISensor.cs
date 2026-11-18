@@ -43,8 +43,12 @@ public class AISensor : MonoBehaviour
 
         //left side
         vertices[vert++] = bottomCenter;
-        vertices[vert++] = bottomCenter;
-        vertices[vert++] = top;
+        vertices[vert++] = bottomLeft;
+        vertices[vert++] = bottomRight;
+
+        vertices[vert++] = topCenter;
+        vertices[vert++] = topLeft;
+        vertices[vert++] = topRight;
         //right side
 
         // Far Side
